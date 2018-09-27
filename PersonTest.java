@@ -32,25 +32,25 @@ public class PersonTest
     public void getInitials()
     {
         String testInitialsSS;
-	String testInitialsJ;
-	String testemptyPerson;
-	String testvoidPerson;
+        String testInitialsJ;
+        String testInitialsEmpty;
+        String testInitialsNull;
         Person sarah_smith;
-	Person susan_jones;
-	Person emptyPerson;
-	Person nullPerson;
+        Person susan_jones;
+        Person emptyPerson;
+        Person nullPerson;
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
-	emptyPerson = new Person ("");
-	nullPerson = new Person (null);
+        emptyPerson = new Person ("");
+        nullPerson = new Person (null);
         testInitialsSS = sarah_smith.getInitials();
         testInitialsJ = susan_jones.getInitials();
-	testInitialsEmpty = emptyPerson.getInitals();
-	testInitialsNull = nullPerson.getInitals();
+        testInitialsEmpty = emptyPerson.getInitials();
+        testInitialsNull = nullPerson.getInitials();
         assertEquals("SS", testInitialsSS);
         assertEquals("J", testInitialsJ);
-	assertEquals("",testInitialsEmpty);
-	assertEquals("",testInitialsNull);
+        assertEquals("",testInitialsEmpty);
+        assertEquals("",testInitialsNull);
        
     }
     
@@ -58,25 +58,25 @@ public class PersonTest
     public void getName()
     {
         String testNameFS;
-	String testNameMJ;
-        String testemptyPerson;
-	String testvoidPerson;
+        String testNameMJ;
+        String testNameEmpty;
+        String testNameNull;
         Person fred_smith;
-	Person emptyPerson;
-	Person nullPerson;
-	Person mary_jones;
+        Person emptyPerson;
+        Person nullPerson;
+        Person mary_jones;
         fred_smith = new Person ("Fred", "Smith");
         mary_jones = new Person ("Jones");
-	emptyPerson = new Person ("");
-	nullPerson = new Person (null); 
+        emptyPerson = new Person ("");
+        nullPerson = new Person (null); 
         testNameFS = fred_smith.getName();
         testNameMJ = mary_jones.getName();
-	testNameNull = nullPerson.getName();
-	testNameEmpty = emptyPerson.getName();
+        testNameNull = nullPerson.getName();
+        testNameEmpty = emptyPerson.getName();
         assertEquals("Fred Smith", testNameFS);
         assertEquals("Jones", testNameMJ);
-	assertEquals("", testNameEmpty);
-	assertEquals("", testNameNull);
+        assertEquals("", testNameEmpty);
+        assertEquals("", testNameNull);
     }
         
     // testing printReverse seems very tricky, I'm not sure how to capture console output into a String.
@@ -84,13 +84,13 @@ public class PersonTest
     public void printReverse()
     {
         String testReverseSS;
-	String testReverseJ;
-	String testprint;
+    String testReverseJ;
+    String testprint;
         
-	Person sarah_smith, susan_jones;
+    Person sarah_smith, susan_jones;
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
-//	testprint = new OutputStream(sarah_smith.printReverse());
+//  testprint = new OutputStream(sarah_smith.printReverse());
     }
         
 }

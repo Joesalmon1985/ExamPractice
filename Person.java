@@ -5,7 +5,7 @@
  * @author Joe Salmon 
  * @version 1.1
  */
-
+import java.lang.*;
 public class Person
 {
     // instance variables for a persons first and second name
@@ -15,18 +15,22 @@ public class Person
     /**
      * Constructor for objects of class Person
      */
-    public Person(String newFirstName, String newSecondName)
+    public Person(String firstName, String secondName)
     {
         // Sets first and second name to the given arguments.
-        this.firstName = newFirstName;
-        this.secondName = newSecondName;
+        this.firstName = firstName;
+        this.secondName = secondName;
     }
 
-        public Person(String newSecondName)
+        public Person(String secondName)
     {
         // Sets the second name to the given argument while leaving first name 
         // blank.
-        this("", newSecondName);
+        this("", secondName);
+        if (secondName == null)
+        {
+            this.secondName = "";
+        }    
     }
     
     /**
@@ -36,7 +40,8 @@ public class Person
     // gets the first and second initial.
     public String getInitials()
     {
-        String firstInitial = "", secondInitial = "";
+        String firstInitial = ""; 
+        String secondInitial = "";
         if (!firstName.equals(""))
         {
             firstInitial = this.firstName.substring(0,1);
@@ -52,11 +57,12 @@ public class Person
     public String getName ()
     {
         String firstName = this.firstName;
-	String secondName = this.secondName;
+    String secondName = this.secondName;
         return (firstName + " " + secondName).trim();
     }
     public void printReverse()
     {
-	System.out.println(new this.StringBuilder(getName().reverse());
+        StringBuilder str = new StringBuilder(this.getName());
+        System.out.println(str);
     }
 }
