@@ -33,19 +33,19 @@ public class Person
      * Setter and getter methods for obects of class Person.
      */
     
-    // gets the first and second inital.
-    public String getInitals()
+    // gets the first and second initial.
+    public String getInitials()
     {
-        String firstInital = "", secondInital = "";
+        String firstInitial = "", secondInitial = "";
         if (!firstName.equals(""))
         {
-            firstInital = this.firstName.substring(0,1);
+            firstInitial = this.firstName.substring(0,1);
         }
                 if (!secondName.equals(""))
         {
-            secondInital = this.secondName.substring(0,1);
+            secondInitial = this.secondName.substring(0,1);
         }
-    return firstInital + secondInital;
+    return firstInitial + secondInitial;
     }
 
     // gets the first name and second name, with a space between them.
