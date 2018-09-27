@@ -31,7 +31,8 @@ public class PersonTest
     @Test
     public void getInitals()
     {
-        String testInitalsSS, testInitalsJ;
+        String testInitalsSS;
+	String testInitalsJ;
         Person sarah_smith, susan_jones;
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
@@ -45,10 +46,12 @@ public class PersonTest
     @Test
     public void getName()
     {
-        String testNameFS, testNameMJ;
+        String testNameFS;
+	String testNameMJ;
         Person fred_smith, mary_jones;
         fred_smith = new Person ("Fred", "Smith");
         mary_jones = new Person ("Jones");
+
         testNameFS = fred_smith.getName();
         testNameMJ = mary_jones.getName();
         assertEquals("Fred Smith", testNameFS);
