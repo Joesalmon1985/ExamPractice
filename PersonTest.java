@@ -7,8 +7,8 @@ import org.junit.Test;
 /**
  * The test class PersonTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @author  Joe Salmon
+ * @version 1.1
  */
 public class PersonTest
 {
@@ -33,9 +33,16 @@ public class PersonTest
     {
         String testInitalsSS;
 	String testInitalsJ;
-        Person sarah_smith, susan_jones;
+	String testemptyPerson;
+	String testvoidPerson;
+        Person sarah_smith;
+	Person susan_jones;
+	Person emptyPerson;
+	Person nullPerson;
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
+	emptyPerson = new Person ();
+	nullPerson = new Person (null);
         testInitalsSS = sarah_smith.getInitals();
         testInitalsJ = susan_jones.getInitals();
         assertEquals("SS", testInitalsSS);
