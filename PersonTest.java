@@ -45,8 +45,12 @@ public class PersonTest
 	nullPerson = new Person (null);
         testInitialsSS = sarah_smith.getInitials();
         testInitialsJ = susan_jones.getInitials();
+	testInitialsEmpty = emptyPerson.getInitals();
+	testInitialsNull = nullPerson.getInitals();
         assertEquals("SS", testInitialsSS);
         assertEquals("J", testInitialsJ);
+	assertEquals("",testInitialsEmpty);
+	assertEquals("",testInitialsNull);
        
     }
     
@@ -67,8 +71,12 @@ public class PersonTest
 	nullPerson = new Person (null); 
         testNameFS = fred_smith.getName();
         testNameMJ = mary_jones.getName();
+	testNameNull = nullPerson.getName();
+	testNameEmpty = emptyPerson.getName();
         assertEquals("Fred Smith", testNameFS);
         assertEquals("Jones", testNameMJ);
+	assertEquals("", testNameEmpty);
+	assertEquals("", testNameNull);
     }
         
     // testing printReverse seems very tricky, I'm not sure how to capture console output into a String.
