@@ -23,28 +23,6 @@ public class PersonTest
         mary_jones = new Person ("Jones");
     }
 
-    
-
-    /**
-     * Sets up the test fixture.
-     *
-     * Called before every test case method.
-     */
-    @Before
-    public void setUp()
-    {
-
-    }
-
-    /**
-     * Tears down the test fixture.
-     *
-     * Called after every test case method.
-     */
-    @After
-    public void tearDown()
-    {
-    }
 
     @Test
     public void Person()
@@ -86,6 +64,7 @@ public class PersonTest
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
         sarah_smith.printReverse();
+	
         // Not sure how to test this to be honest.
     }
         
