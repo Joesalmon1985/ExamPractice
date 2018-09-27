@@ -41,7 +41,7 @@ public class PersonTest
 	Person nullPerson;
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
-	emptyPerson = new Person ();
+	emptyPerson = new Person ("");
 	nullPerson = new Person (null);
         testInitialsSS = sarah_smith.getInitials();
         testInitialsJ = susan_jones.getInitials();
@@ -67,7 +67,7 @@ public class PersonTest
 	Person mary_jones;
         fred_smith = new Person ("Fred", "Smith");
         mary_jones = new Person ("Jones");
-	emptyPerson = new Person ();
+	emptyPerson = new Person ("");
 	nullPerson = new Person (null); 
         testNameFS = fred_smith.getName();
         testNameMJ = mary_jones.getName();
