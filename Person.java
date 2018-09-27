@@ -51,19 +51,9 @@ public class Person
     // gets the first name and second name, with a space between them.
     public String getName ()
     {
-        String firstName = "", secondName = ""; 
-        // this gap will become a space if there is a first name.
-        String gap = "";
-        if (!this.firstName.equals(""))
-        {
-            firstName = this.firstName;
-            gap = " ";
-        }
-                if (!this.secondName.equals(""))
-        {
-            secondName = this.secondName;
-        }        
-        return firstName + gap + secondName;
+        String firstName = this.firstName;
+	String secondName = this.secondName;
+        return (firstName + " " + secondName).trim();
     }
     public void printReverse()
     {
