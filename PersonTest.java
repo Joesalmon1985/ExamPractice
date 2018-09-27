@@ -29,10 +29,10 @@ public class PersonTest
     }
 
     @Test
-    public void getInitals()
+    public void getInitials()
     {
-        String testInitalsSS;
-	String testInitalsJ;
+        String testInitialsSS;
+	String testInitialsJ;
 	String testemptyPerson;
 	String testvoidPerson;
         Person sarah_smith;
@@ -43,10 +43,10 @@ public class PersonTest
         susan_jones = new Person ("Jones");
 	emptyPerson = new Person ();
 	nullPerson = new Person (null);
-        testInitalsSS = sarah_smith.getInitals();
-        testInitalsJ = susan_jones.getInitals();
-        assertEquals("SS", testInitalsSS);
-        assertEquals("J", testInitalsJ);
+        testInitialsSS = sarah_smith.getInitials();
+        testInitialsJ = susan_jones.getInitials();
+        assertEquals("SS", testInitialsSS);
+        assertEquals("J", testInitialsJ);
        
     }
     
