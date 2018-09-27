@@ -1,5 +1,4 @@
-
-
+// import java.io.*; I can't make this work. Could it be I'm using bluej?
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -56,16 +55,18 @@ public class PersonTest
         assertEquals("Jones", testNameMJ);
     }
         
+    // testing printReverse seems very tricky, I'm not sure how to capture console output into a String.
     @Test
     public void printReverse()
     {
-        String testReverseSS, testReverseJ;
-        Person sarah_smith, susan_jones;
+        String testReverseSS;
+	String testReverseJ;
+	String testprint;
+        
+	Person sarah_smith, susan_jones;
         sarah_smith = new Person ("Sarah", "Smith");
         susan_jones = new Person ("Jones");
-        sarah_smith.printReverse();
-	
-        // Not sure how to test this to be honest.
+//	testprint = new OutputStream(sarah_smith.printReverse());
     }
         
 }
