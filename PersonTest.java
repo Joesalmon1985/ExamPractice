@@ -55,10 +55,16 @@ public class PersonTest
     {
         String testNameFS;
 	String testNameMJ;
-        Person fred_smith, mary_jones;
+        String testemptyPerson;
+	String testvoidPerson;
+        Person fred_smith;
+	Person emptyPerson;
+	Person nullPerson;
+	Person mary_jones;
         fred_smith = new Person ("Fred", "Smith");
         mary_jones = new Person ("Jones");
-
+	emptyPerson = new Person ();
+	nullPerson = new Person (null); 
         testNameFS = fred_smith.getName();
         testNameMJ = mary_jones.getName();
         assertEquals("Fred Smith", testNameFS);
