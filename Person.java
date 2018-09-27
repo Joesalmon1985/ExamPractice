@@ -1,10 +1,11 @@
 
 /**
- * Write a description of class Person here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * This class is an attempt to answer a mock exam question. 
+ * It has been updated with feedback from reddit/r/javahelp.
+ * @author Joe Salmon 
+ * @version 1.1
  */
+
 public class Person
 {
     // instance variables - replace the example below with your own
