@@ -8,7 +8,7 @@
 
 public class Person
 {
-    // instance variables - replace the example below with your own
+    // instance variables for a persons first and second name
     private String firstName;
     private String secondName;
 
