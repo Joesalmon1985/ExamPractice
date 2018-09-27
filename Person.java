@@ -57,33 +57,6 @@ public class Person
     }
     public void printReverse()
     {
-        int lengthWord = 0;
-        String toReturn = "";
-        char[] reversed = new char[0];
-        
-        // this creats a char array the length of the second name, and populates
-        // it in reverse order.
-        lengthWord = this.secondName.length();
-        reversed = new char[lengthWord];
-        for (int i =0; i < lengthWord; i++)
-        {
-            reversed[i] = this.secondName.charAt(lengthWord-i-1);
-        }
-        // this takes the array and converts it into a string.
-        toReturn = new String(reversed);
-        
-        // this takes the array and resets it to the length of the first name, and
-        // populates it in reverse order.
-        lengthWord = this.firstName.length();
-        reversed = new char[lengthWord];
-        for (int i =0; i < lengthWord; i++)
-        {
-            reversed[i] = this.firstName.charAt(lengthWord-i-1);
-        }
-        
-        // this takes the array and converts it to a string sticking it onto to
-        // the second name already reversed.
-        toReturn = toReturn + " " + new String(reversed) ;
-        System.out.println (toReturn);
+	System.out.println(new this.StringBuilder(getName().reverse());
     }
 }
